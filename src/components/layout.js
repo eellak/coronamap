@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   });
 
   useEffect(()=> {
-    fetch(process.env.GATSBY_API_URL, {
+    fetch('https://storage.googleapis.com/corona-map/data.json', {
       mode: 'cors',
       cache: 'force-cache'
     })
