@@ -26,3 +26,6 @@
     ```shell
     npm run build
     ```
+    
+ 1. **Alpha Version*
+ https://covid-19.mountainaper.now.sh/?fbclid=IwAR1ETBx_gjIq88CIleQEJD9jq3cyH90xOg39aFUUUvSPOOPMoTP_HiONDXk
