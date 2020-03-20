@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   useEffect(()=> {
     fetch('https://storage.googleapis.com/corona-map/data.json', {
       mode: 'cors',
-      cache: 'force-cache'
+      // cache: 'force-cache'
     })
     .then((response) => {
       return response.json();
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
         {/* Sidebar Left */}
         <div className="sidebar" style={{'gridTemplateRows': grid.left.join(' ')}}>
           <Totals data={data.totals} className="totals-mobile" />
-          <Box title="COVID-19 | Ελλάδα" index={0} up={[grid, setGrid]}>
+          <Box title="COVID-19" index={0} up={[grid, setGrid]}>
             <div className="box-list">
               {data.cases.filter(f=> f.location ).map((c, i) => (<div key={i.toString()+'_case'} className="box-list-item"><div>{c.location}</div><div>{c.count}</div></div>))}
             </div>
@@ -138,7 +138,11 @@ const Layout = ({ children }) => {
 
       </>
       ) : (
-        <div>Δοκιμάστε ξανά αργότερα...</div>
+        <>
+        <div className="skeleton"></div>
+        <div className="skeleton"></div>
+        <div className="skeleton"></div>
+        </>
       )}
       </div>
 

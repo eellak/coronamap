@@ -591,19 +591,27 @@ header {
   top: 0;
 }
 
-header > div {
-  margin-right: 10px;
+header > div:last-child {
+  flex: 1;
+  text-align: center;
+  padding-right: 148px;
 }
 
 header .gov-logo img {
-  height: 100%;
   margin: 0;
+  width: 148px;
 }
 
 header h1 {
   font-size: 24px;
   font-weight: 500;
   line-height: 40px;
+  margin: 0;
+}
+
+.skeleton {
+  background-color: #ffffff91;
+  border-radius: 3px;
 }
 
 footer {
@@ -1045,10 +1053,12 @@ footer a{
 
   header .gov-logo img {
     height: 24px;
+    width: auto;
   }
 
-  header > div:nth-child(2) {
-    display: none;
+  header > div:last-child {
+    text-align: left;
+    padding-right: 0;
   }
 
   header h1 {

@@ -21,7 +21,6 @@ const Header = () => {
           <img src={GovLogo} alt="GOV.GR" />
         </a>
       </div>
-      <div>|</div>
       <div><h1>{site.siteMetadata.title}</h1></div>
     </header>
   )
