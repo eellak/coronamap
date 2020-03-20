@@ -26,3 +26,8 @@
     ```shell
     npm run build
     ```
+    
+ 1. **Alpha Version**
+ 
+ https://covid-19.mountainaper.now.sh/
+ 
