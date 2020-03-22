@@ -29,5 +29,5 @@
     
  1. **Alpha Version**
  
- https://covid-19.mountainaper.now.sh/
+http://coronamap.gov.gr/ 
  
