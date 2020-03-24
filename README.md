@@ -27,7 +27,7 @@
     npm run build
     ```
     
- 1. **Alpha Version**
+ 1. **ΒΕΤΑ Version**
  
 http://coronamap.gov.gr/ 
  
